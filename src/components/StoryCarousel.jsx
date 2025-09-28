@@ -141,7 +141,7 @@ function StoryCarousel({ stories, onClose, goToNextUser }) {
           <StoryItem item={currentItem} onLoadingChange={setIsLoading} />
         </div>
 
-        {/* Tap left/right */}
+    
         <div
           className="absolute inset-0 flex"
           onClick={(e) => {
@@ -156,7 +156,7 @@ function StoryCarousel({ stories, onClose, goToNextUser }) {
           onTouchEnd={() => setIsPaused(false)}
         />
 
-        {/* Close button */}
+        
         <button
           className="absolute top-4 right-4 text-white text-2xl p-2 rounded-full bg-black/30 z-10"
           onClick={onClose}
