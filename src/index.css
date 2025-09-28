@@ -1,8 +1,32 @@
 @import "tailwindcss";
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden; /* prevents scrolling */
+}
+
+/* Story Progress Bar Styles */
+.story-progress-viewed {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.story-progress-current {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1 !important;
+}
+
+/* Debug styles */
+.story-progress-viewed::after {
+  content: "VIEWED";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: red;
+  font-size: 10px;
+  z-index: 1000;
 }
